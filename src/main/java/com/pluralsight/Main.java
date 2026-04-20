@@ -25,12 +25,13 @@ public class Main {
                 while ((input = goldilocksReader.readLine()) != null) {
                     System.out.println(input);
                 }
-                goldilocksReader.close();
+
             } else if (userinput.equalsIgnoreCase("hansel_and_gretel.txt")) {
                 String input;
                 while ((input = hanselReader.readLine()) != null) {
                     System.out.println(input);
                 }
+
             } else if (userinput.equalsIgnoreCase("mary_had_a_little_lamb.txt")) {
                 String input;
                 while ((input = maryReader.readLine()) != null) {
@@ -39,11 +40,14 @@ public class Main {
             }else {
                 System.out.println("not an option");
             }
-
+            goldilocksReader.close();
+            hanselReader.close();
+            maryReader.close();
 
         } catch (IOException ex) {
             System.out.println("Something went wrong.");
             scanner.close();
+
         }
     }
 }
