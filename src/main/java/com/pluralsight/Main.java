@@ -12,6 +12,7 @@ public class Main {
 
 
         try {
+            int lineNum = 0;
 
             BufferedReader goldilocksReader = new BufferedReader(new FileReader("goldilocks.txt"));
             BufferedReader hanselReader = new BufferedReader(new FileReader("hansel_and_gretel.txt"));
@@ -22,20 +23,26 @@ public class Main {
 
             if (userinput.equalsIgnoreCase("goldilocks.txt")) {
                 String input;
+
                 while ((input = goldilocksReader.readLine()) != null) {
-                    System.out.println(input);
+                    lineNum++;
+                    System.out.println(lineNum + ": " + input);
                 }
 
             } else if (userinput.equalsIgnoreCase("hansel_and_gretel.txt")) {
                 String input;
+
                 while ((input = hanselReader.readLine()) != null) {
-                    System.out.println(input);
+                    lineNum++;
+                    System.out.println(lineNum + ": " + input);
                 }
 
             } else if (userinput.equalsIgnoreCase("mary_had_a_little_lamb.txt")) {
                 String input;
+
                 while ((input = maryReader.readLine()) != null) {
-                    System.out.println(input);
+                    lineNum++;
+                    System.out.println(lineNum + ": " + input);
                 }
             }else {
                 System.out.println("not an option");
