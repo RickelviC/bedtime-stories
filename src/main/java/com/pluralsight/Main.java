@@ -53,8 +53,9 @@ public class Main {
 
         } catch (IOException ex) {
             System.out.println("Something went wrong.");
-            scanner.close();
+
 
         }
+        scanner.close();
     }
 }
