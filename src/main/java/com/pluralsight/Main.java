@@ -10,7 +10,6 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-
         try {
             int lineNum = 0;
 
@@ -44,7 +43,7 @@ public class Main {
                     lineNum++;
                     System.out.println(lineNum + ": " + input);
                 }
-            }else {
+            } else {
                 System.out.println("not an option");
             }
             goldilocksReader.close();
@@ -53,8 +52,6 @@ public class Main {
 
         } catch (IOException ex) {
             System.out.println("Something went wrong.");
-
-
         }
         scanner.close();
     }
